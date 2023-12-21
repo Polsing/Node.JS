@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 app.use(morgan('combined'))
 app.get("/", (req, res) => {
-    res.send("APL-Shop");
+    res.send("APL-Shop01");
 });
 
 app.listen(port, () => {
