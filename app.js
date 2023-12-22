@@ -4,12 +4,15 @@ const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
 const  app = express();
-const port = 5000;
+const PORT = process.env.PORT;
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname,"public/")));
 
+app.get("/",(req,res)=>{
+    res.send("APL-shop");
+})
 
-app.listen(port, ()=>{
-    debug('port: ' + chalk.green(port) + ' ON');
+app.listen(PORT, ()=>{
+    debug('port: ' + chalk.green(PORT) + ' ON');
 })
