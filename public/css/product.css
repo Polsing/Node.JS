@@ -1,0 +1,29 @@
+.container{
+    max-width: 1190px;
+    margin: 20px auto;
+    padding: 1rem;
+    padding-top: 4rem;
+
+}
+
+.products-con{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px , 1fr));
+    grid-gap: 0.7rem;
+}
+
+.products-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    outline: 2px solid white;
+    transition: 0.3s;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+.products-item:hover{
+    outline:2px solid rgb(208, 142, 222);
+}
